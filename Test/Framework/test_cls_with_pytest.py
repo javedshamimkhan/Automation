@@ -1,7 +1,3 @@
-from pytest import mark
-
-
-@mark.clstest                   
 class tst_cls:
 
     def test_cls_func(self):
@@ -14,6 +10,8 @@ class tst_cls:
     def test_always_fails(self):
         assert False
 
-    @mark.regression
+    def test_git_Func(self):
+        assert pass
+
     def test_uppercase(self):
         assert "loud noises".upper() == "LOUD NOISES"
