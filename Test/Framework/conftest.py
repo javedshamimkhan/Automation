@@ -10,12 +10,12 @@ def pytest_addoption(parser):
     )
 
 
-@fixture(scope='session')
+@fixture(scope='function')
 def env(request):
     return request.config.getoption("--env")
 
 
-@fixture(scope= 'session')
+@fixture(scope= 'function')
 def app_config(env):
     cfg=Config(env)
     return cfg
