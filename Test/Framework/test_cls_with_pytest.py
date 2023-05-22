@@ -15,3 +15,6 @@ class tst_cls:
 
     def test_uppercase(self):
         assert "loud noises".upper() == "LOUD NOISES"
+
+    def test_git_Func2(self):
+        assert True
